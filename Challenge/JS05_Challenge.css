@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+}
+
+.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 10px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  text-decoration: none;
+  color: grey;
+}
+
+.nav-items a {
+  font-size: large;
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: grey;
+  font-size: 1.5rem;
+  transform: translate(10px, -5px);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+footer .footer-line .a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  position: relative;
+}
+footer .footer-line .a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 70%;
+  background-color: white;
+}/*# sourceMappingURL=JS05_Challenge.css.map */

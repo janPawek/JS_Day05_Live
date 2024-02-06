@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: black;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sticky-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 10px;
+  }
+  
+//   .logo {
+//     font-family: 'Great Vibes', cursive; 
+//     font-size: 24px;
+//     color: black;
+//   }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    text-decoration: none;
+    color: grey;
+  }
+  .nav-items a {font-size: large;
+    text-decoration: none;
+    color: grey;
+    }
+    a:hover {color: grey;
+        font-size: 1.5rem;
+    transform: translate(10px, -5px);
+   
+    }
+
+//   footer
+$border-color: white;
+$background-color: black;
+$text-color: white;
+
+footer {
+  background-color: $background-color;
+  color: $text-color;
+  padding: 20px;
+  text-align: center;
+
+  .footer-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+
+      .a {
+        text-decoration: none;
+        color: $text-color;
+        padding: 0 10px; 
+        position: relative;
+
+        &:not(:last-child)::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 70%; 
+          background-color: $border-color;
+        }
+      }
+    }
+}
