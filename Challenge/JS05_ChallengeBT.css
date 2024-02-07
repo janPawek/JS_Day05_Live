@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+footer .footer-line .a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  position: relative;
+}
+footer .footer-line .a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 70%;
+  background-color: white;
+}/*# sourceMappingURL=JS05_ChallengeBT.css.map */
