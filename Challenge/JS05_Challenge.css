@@ -45,7 +45,6 @@ a:hover {
   -moz-column-gap: 30px;
        column-gap: 30px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 h1 {
@@ -54,17 +53,15 @@ h1 {
 
 .search-container {
   display: flex;
-  margin-bottom: 10px;
+  gap: 20px;
 }
 
 input[type=text] {
   flex: 1;
-  padding: 10px;
   font-size: 16px;
 }
 
 button {
-  padding: 10px 20px;
   font-size: 16px;
   background-color: black;
   color: green;
