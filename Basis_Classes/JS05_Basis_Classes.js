@@ -112,7 +112,7 @@ let person3 = new Person('Person3', 'Male', 40, 'French', 'Teacher');
 //  Methoden
 
 let printDiv=document.getElementById (`allDetails`);
-document.innerHTML=$(car1.showDetails();
+document.innerHTML=${car1.showDetails();
 car2.showDetails();
 car3.showDetails();
   car1.showDetails();
@@ -126,3 +126,4 @@ car3.showDetails();
   person1.showDetails();
   person2.showDetails();
   person3.showDetails();
+}
